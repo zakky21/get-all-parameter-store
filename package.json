@@ -1,0 +1,23 @@
+{
+  "name": "get-all-parameter-store",
+  "version": "1.0.0",
+  "description": "get All AWS Parameter Store values",
+  "main": "getparameters.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakky21/get-all-parameter-store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zakky21/get-all-parameter-store/issues"
+  },
+  "homepage": "https://github.com/zakky21/get-all-parameter-store#readme",
+  "dependencies": {
+    "argv": "0.0.2",
+    "aws-sdk": "^2.357.0"
+  }
+}
