@@ -5,7 +5,7 @@ get All AWS Parameter Store values
 # HOW TO USE
 
 ```
-$node install
+$npm install
 $node getparameters.js
 ```
 
