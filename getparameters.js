@@ -4,20 +4,24 @@ argv.option([
   {
     name: 'region',
     short: 'r',
-    type: 'string'
+    type: 'string',
+    description: 'Set target AWS region. If not set then use process.env value.'
   },
   {
     name: 'accessKeyId',
     short: 'a',
-    type: 'string'
+    type: 'string',
+    description: 'Set target AWS accessKeyId. If not set then use process.env value.'
   },
   {
     name: 'secretAccessKey',
     short: 's',
-    type: 'string'
+    type: 'string',
+    description: 'Set target AWS secretAccessKey. If not set then use process.env value.'
   }
 ])
 
+console.log('arg', process.argv)
 const env = argv.run().options
 if (!env.accessKeyId) env.accessKeyId = process.env.AWS_ACCESS_KEY_ID
 if (!env.secretAccessKey) env.secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY
